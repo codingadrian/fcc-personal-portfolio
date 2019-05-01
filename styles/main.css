@@ -26,6 +26,13 @@ ul li {
   font-weight: bold;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  ul li {
+    font-weight: normal;
+    margin: 15px;
+  }
+}
+
 /*end of navbar*/
 
 
@@ -63,7 +70,6 @@ ul li {
 }
 
 .columns {
-  border: 1px solid black;
   width: 80%;
   padding: 10px;
   margin: 0 auto;
@@ -71,14 +77,52 @@ ul li {
   justify-content: space-around;
 }
 
+
+.project-tile {
+  border: 1px solid blue;
+  display: block;
+  margin: 15px 0;
+}
+
+.project-pic {
+  width: 200px;
+  height: auto;
+}
+
+.project-name {
+  border-top: 1px solid blue;
+  display: flex;
+  justify-content: center;
+}
+
 #left-column {
-  border: 1px solid black;
   display: inline;
 }
 
 #right-column {
-  border: 1px solid black;
   display: inline;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  #projects {
+    height: 200vh;
+  }
+  
+  #project-header {
+    font-size: 1em;
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .project-pic {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*end of projects*/
@@ -116,8 +160,29 @@ ul li {
   font-size: 1.05em;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
 
+  #contact {
+    padding-top: 10%;
+  }
 
+  #contact-header {
+    font-size: 1em;
+  }
+
+  .contact {
+    border: 1px solid lightgreen;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: aquamarine;
+    font-size: .70em;
+    margin-top: 25%;
+  }
+  
+}
 
 /*contact*/
 
@@ -127,5 +192,12 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10px 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  footer {
+    font-size: .30em;
+    padding: 5px 0;
+  }
 }
 /**/
